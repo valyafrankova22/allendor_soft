@@ -229,16 +229,35 @@ header .social_media img {
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: #F4F4F4;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
+.form .form-body {
+  position: relative;
+}
+.form .form-body::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: rgba(204, 231, 38, 0.6) url("../../../images/YlWC.gif") center;
+  opacity: 0;
+  visibility: hidden;
+}
+.form .form-body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
 .form h1 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: #000;
   text-align: center;
+  font-size: 20px;
 }
 .form .form-item {
   position: relative;
@@ -247,12 +266,15 @@ header .social_media img {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgb(204, 231, 38);
   outline: none;
   background: transparent;
+}
+.form .form_input._error {
+  border-bottom: 1px solid red;
 }
 .form label {
   position: absolute;
@@ -260,7 +282,7 @@ header .social_media img {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   pointer-events: none;
   transition: 0.5s;
 }
@@ -268,41 +290,42 @@ header .social_media img {
 .form input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: rgb(204, 231, 38);
   font-size: 12px;
 }
-.form input ._error {
-  box-shadow: 0 0 15px red;
+.form button {
+  border: none;
+  background: transparent;
+  margin-top: 40px;
 }
-.form a {
+.form button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #000;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  margin-top: 40px;
   letter-spacing: 4px;
 }
-.form a:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+.form button:hover {
+  background: rgb(204, 231, 38);
+  color: #000;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgb(204, 231, 38), 0 0 5px rgb(204, 231, 38), 0 0 5px rgb(204, 231, 38), 0 0 5px rgb(204, 231, 38);
 }
-.form a span {
+.form button span {
   position: absolute;
   display: block;
 }
-.form a span:nth-child(1) {
+.form button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, rgb(204, 231, 38));
   animation: btn-anim1 1s linear infinite;
 }
 @keyframes btn-anim1 {
@@ -313,12 +336,12 @@ header .social_media img {
     left: 100%;
   }
 }
-.form a span:nth-child(2) {
+.form button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, rgb(204, 231, 38));
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
@@ -330,12 +353,12 @@ header .social_media img {
     top: 100%;
   }
 }
-.form a span:nth-child(3) {
+.form button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, rgb(204, 231, 38));
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -347,12 +370,12 @@ header .social_media img {
     right: 100%;
   }
 }
-.form a span:nth-child(4) {
+.form button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, rgb(204, 231, 38));
   animation: btn-anim4 1s linear infinite;
   animation-delay: 0.75s;
 }
