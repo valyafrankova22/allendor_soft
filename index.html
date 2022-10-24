@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allendor Soft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand nav-link active" aria-current="page" href="#"><img src="images/allendor_logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">про компанію</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">каталог</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">доставка та оплата</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">наші партнери</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">контакти</a>
+                </li>
+            </ul>
+            <div class="social_media d-flex">
+                <div>
+                    <a href="https://www.instagram.com/allendor_soft/" target="_blank">
+                    <img src="images/instagram.svg" alt="#">
+                </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/allendor.soft" target="_blank">
+                        <img src="images/facebook-f.svg" alt="#">
+                    </a>
+                </div>
+            </div>
+            <div class="form-button">
+                <a href="#popup" class="custom-btn btn-1">
+                    <span>дзвінок</span>
+                    <span>Замовити</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+</header>
+
+
+
+<div id="popup" class="popup">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <div class="form">
+                <form action="#" id="form" class="form-body needs-validation" novalidate>
+                   <h1 class="form_title">Замовити дзвінок</h1>
+                    <div class="form-item">
+                        <input id="validationCustom01" type="text" name="name" required="" class="form_input _req">
+                        <label for="validationCustom01" class="form_label">ПІБ*:</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="form-item has-validation">
+                        <input id="validationCustomUsername" type="text" name="Tel" class="form_input _req" aria-describedby="inputGroupPrepend" required>
+                        <label for="validationCustomUsername" class="form_label" >Телефон*:</label>
+                        <div class="invalid-feedback">
+                            Please write your phone number.
+                        </div>
+                    </div>
+                    <a href="#" type="submit" class="form_button btn">
+                            <span></span>
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                           Надіслати
+                        </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
