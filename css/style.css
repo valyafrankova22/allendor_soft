@@ -60,7 +60,7 @@ table {
 }
 
 :root {
-  --main-bg-color: #F4F4F4;
+  --main-bg-color: rgba(204, 231, 38, 0.1);
   --main-color: rgb(204, 231, 38);
 }
 
@@ -121,6 +121,10 @@ header .social_media img {
   perspective: 230px;
 }
 
+.btn-1:hover {
+  color: white;
+}
+
 .btn-1 span {
   background: rgb(204, 231, 38);
   display: block;
@@ -170,6 +174,48 @@ header .social_media img {
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
+}
+
+.wrapper {
+  background: rgba(204, 231, 38, 0.1);
+}
+.wrapper .banner .banner_item {
+  padding-top: 50px;
+  max-height: content-box;
+}
+.wrapper .banner .banner_item h1 {
+  font-size: 70px;
+  background: rgba(204, 231, 38, 0.8);
+  border-radius: 5px;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.wrapper .banner .banner_item h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrapper .banner .banner_item .btn-2 {
+  background: rgb(204, 231, 38);
+  border: none;
+  width: 400px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 43px;
+  text-align: center;
+}
+.wrapper .banner .banner_item .btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.wrapper .banner .banner_item .btn-2:hover {
+  color: white;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .popup {
