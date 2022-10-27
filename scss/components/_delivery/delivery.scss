@@ -1,0 +1,88 @@
+.delivery {
+  background: url("../../../images/banner-background.jpeg");
+  padding: 100px 0;
+  box-sizing: border-box;
+
+
+  h3 {
+    font-size: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: dimgray;
+
+
+  }
+
+  .del-item {
+    align-items: center;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    margin: 15px 0;
+
+
+
+    .i-number {
+      background-color: rgba(204, 231, 38, 0.5);
+      border-radius: 5px;
+      font-size: 20px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      font-style: italic;
+    }
+
+    p {
+      line-height: 1;
+      font-size: 17px;
+      font-weight: 400;
+      font-family: Montserrat, sans-serif;
+      font-style: italic;
+    }
+  }
+
+  .btn-3 {
+    background: rgb(204, 231, 38);
+    border: none;
+    width: 400px;
+    height: 60px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 43px;
+    text-align: center;
+    margin: 70px 0;
+
+
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:hover {
+    color: white;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+}
+
+hr {
+  margin-bottom: 60px;
+  color: transparent;
+}
+
+.partners {
+  align-items: center;
+  .part-item {
+
+    img {
+      width: 100%;
+    }
+  }
+}
+

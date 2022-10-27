@@ -1,0 +1,45 @@
+footer {
+  background-color: #f2f2f2;
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  .footer-row {
+    padding-top: 15px;
+    border-top: 5px solid #E6E6F0;
+  }
+  .f-contact {
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+    }
+    a:hover {
+      background-color: rgb(204, 231, 38);
+      border-radius: 5px;
+    }
+  }
+
+  .social_media {
+    padding: 15px;
+    a {
+      padding-right: 10px;
+    }
+    a:hover {
+      background-color: white;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+

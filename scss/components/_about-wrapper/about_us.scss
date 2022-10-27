@@ -1,0 +1,40 @@
+.about_us {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  .row {
+    border: 2px solid rgb(204, 231, 38);
+    border-radius: 10px;
+    padding-right: 0;
+  }
+
+
+  .about-item {
+    img {
+      width: 100%;
+    }
+  }
+  .about-item2 {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+
+    h3 {
+        font-size: 70px;
+        background: rgba(204, 231, 38, 0.8);
+        border-radius: 5px;
+        padding: 0 10px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: dimgray;
+
+    }
+
+    p {
+      text-align: center;
+      line-height: 2;
+      font-size: 1.125rem;
+      font-weight: 400;
+      font-family: Montserrat, sans-serif;
+    }
+  }
+}

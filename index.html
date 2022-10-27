@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header id="header">
+<header id="header" class="header">
     <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
         <a class="navbar-brand nav-link active" aria-current="page" href="#"><img src="images/allendor_logo.svg" alt=""></a>
@@ -18,19 +18,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">про компанію</a>
+                    <a class="nav-link" href="#about_us">про компанію</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">каталог</a>
+                    <a class="nav-link" href="#shop">каталог</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">доставка та оплата</a>
+                    <a class="nav-link" href="#pluses">наші переваги</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">наші партнери</a>
+                    <a class="nav-link" href="#delivery">доставка та оплата</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">контакти</a>
+                    <a class="nav-link" href="#partners">наші партнери</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">контакти</a>
                 </li>
             </ul>
             <div class="social_media d-flex">
@@ -51,13 +54,47 @@
                     <span>Замовити</span>
                 </a>
             </div>
+            <div class="header__cart cart" tabindex="0">
+                <div class="cart__text">
+                    Кошик
+                    <span class="cart__quantity">0</span>
+                </div>
+                <div class="cart-content">
+                    <ul class="cart-content__list" data-simplebar>
+                         <!-- <li class="cart-content__item">
+                            <article class="cart-content__product cart-product">
+                                <img src="images/1.jpg" alt="" class="cart-product__img">
+                                <div class="cart-product__text">
+                                    <h3 class="cart-product__title">крісло Allendor</h3>
+                                    <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                                    <span class="cart-product__price">190 789 ₽</span>
+                                </div>
+                                <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                            </article>
+                        </li> -->
 
+                    </ul>
+                    <div class="cart-content__bottom">
+                        <div class="cart-content__fullprice">
+                            <span>Разом:</span>
+                            <span class="fullprice">11 600 грн</span>
+                        </div>
+                        <div class="cart-content__btn btn">Перейти до кошика</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
 </header>
 <main>
-    <div class="wrapper">
+    <div class="wrapper" id="banner">
         <div class="banner">
             <div class="container">
                 <div class="row">
@@ -100,7 +137,383 @@
             </div>
         </div>
     </div>
+    <div class="about_wrapper" id="about_us">
+        <div class="about_us">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="about-item col-5">
+                        <img src="images/teamm.png" alt="">
+                    </div>
+                    <div class="about-item2 col-7 d-flex flex-column align-items-center">
+                        <h3>Про компанію</h3>
+                        <p>
+                            Allendor - це, заснована у 2021 році, словацька компанія, що спеціалізується на виготовленні
+                            дизайнерських меблів для дому, тераси, готелів, кафе та ресторанів.
+                            Виробництво орієнтоване на ринок південного узбережжя Європи: Греція , Чорногорія, Хорватія, Італія,
+                            Іспанія та Туреччина. Починаючи з 2022 року - і Україна!
+                        </p>
+                        <hr>
+                        <p>
+                            Ми являємось офіційними представниками компанії Allendor в Україні! Гарантуємо, що з нашими меблями ваше життя
+                            стане кращим, адже Allendor - для людей, які відчувають гармонію.
+                            Яскрава природність створює можливість розміщення в будь якому інтер’єрі.
+                            Технологія плетіння та міцна деревина, дають надійність у використанні на довгий час!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop_wrapper" id="shop">
+        <div class="catalog">
+            <div class="container">
+                <div class="row">
+                    <h4>Каталог товарів</h4>
+                    <div class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/1.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/5.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/7.jpg" alt="Allendor"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Allendor 001- натуральний ясень + нейлонова нитка</a>
+                        </h3>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879876</span>
+                            <span class="product__available">В наявності</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">5 800 грн</span>
+                            <span class="product-price__old">7 990 грн</span>
+                        </div>
+                        <!-- cчетчик -->
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="d-flex row justify-content-between">
+                            <button class="product__a">Детальніше</button>
+                            <button class="product__btn">Додати в кошик</button>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/2.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/8.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/10.jpeg" alt="Allendor"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Allendor 002- натуральний ясень + лавсанова стрічка</a>
+                        </h3>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879878</span>
+                            <span class="product__available">В наявності</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">4 700 грн</span>
+                            <span class="product-price__old">6 100 грн</span>
+                        </div>
+                        <!-- cчетчик -->
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="d-flex row justify-content-between">
+                            <button class="product__a">Детальніше</button>
+                            <button class="product__btn">Додати в кошик</button>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/6.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/9.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/11.jpg" alt="Allendor"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Allendor - лавка - натуральний ясень + вставка з червоного дерева </a>
+                        </h3>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879888</span>
+                            <span class="product__available">В наявності</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">1 750 грн</span>
+                            <span class="product-price__old">3 100 грн</span>
+                        </div>
+                        <!-- cчетчик -->
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="d-flex row justify-content-between">
+                            <button class="product__a">Детальніше</button>
+                            <button class="product__btn">Додати в кошик</button>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/12.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/13.jpg" alt="Allendor"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="images/14.jpg" alt="Allendor"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Allendor - столик - натуральний ясень + вставка з червоного дерева</a>
+                        </h3>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879890</span>
+                            <span class="product__available">Очікується</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">4 700 грн</span>
+                            <span class="product-price__old">6 300 грн</span>
+                        </div>
+                        <!-- cчетчик -->
+                        <div class="details-wrapper">
+                            <div class="items counter-wrapper">
+                                <div class="items__control" data-action="minus">-</div>
+                                <div class="items__current data-counter" data-counter>1</div>
+                                <div class="items__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="d-flex row justify-content-between">
+                            <button class="product__a">Детальніше</button>
+                            <button class="product__btn">Додати в кошик</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pluses_wrapper" id="pluses">
+        <div class="container">
+            <div class="row">
+                <div class="plus-item left col-6 d-flex flex-column">
+                    <h4>В чому наші переваги?</h4>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Тільки якісні матеріали плетіння: високотехнологічна нитка Cytori bon - японського виробництва
+                                або міцна лавсанова стрічка.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Деревина - карпатський лісовий ясень.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Деревина покрита маслами з вмістом карнаубського воску, завдяки чому
+                                меблі стійкі до впливу сонця та води.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Компактність у складеному вигляді - і крісла, і столик легко складаються та
+                                не займають багато місця.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Механізм для складання з нержавіючої сталі.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-item d-flex row">
+                        <div class="i-img col-1">
+                            <img src="images/check-solid.svg" alt="">
+                        </div>
+                        <div class="i-text col-11">
+                            <p>Ми абсолютно впевнені у якості та довговічності наших товарів!
+                                Надаємо гарантію на 3 роки на всю продукцію Allendor!
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="plus-item col-6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery" id="delivery">
+        <div class="container">
+            <div class="row">
+                <h3>Доставка та оплата</h3>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>1</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p> Ви робите замовлення на сайті або залишаєте заявку на дзвінок
+                        </p>
+                    </div>
+                </div>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>2</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p> Наш менеджер телефонує вам для підтвердження замовлення
+                        </p>
+                    </div>
+                </div>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>3</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p>Відправляємо протягом 3 робочих днів Новою Поштою
+                        </p>
+                    </div>
+                </div>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>4</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p>Оплатити замовлення можна картою на сайті або при отриманні у відділенні НП
+                        </p>
+                    </div>
+                </div>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>5</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p>Вже за декілька днів замовлення у вас вдома)
+                        </p>
+                    </div>
+                </div>
+                <div class="del-item col-4 d-flex row">
+                    <div class="i-number col-1">
+                        <h4>6</h4>
+                    </div>
+                    <div class="i-text col-11">
+                        <p> Залишились питання? Заповніть форму і наш менеджер зателефонує вам!
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#popup" class="custom-btn btn-3">Замовити дзвінок</a>
+                </div>
+                <hr>
+                <h3>Наші партнери</h3>
+                <div class="partners d-flex row justify-content-between" id="partners">
+                    <div class="part-item col-2">
+                        <img src="images/старбакс.png" alt="">
+                    </div>
+                    <div class="part-item col-2">
+                        <img src="images/part2.png" alt="">
+                    </div>
+                    <div class="part-item col-2">
+                        <img src="images/part1.png" alt="">
+                    </div>
+                    <div class="part-item col-2">
+                        <img src="images/part4.png" alt="">
+                    </div>
+                    <div class="part-item col-2">
+                        <img src="images/part5.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+<footer id="footer">
+    <div class="container">
+        <div class="row footer-row align-items-center">
+            <div class="footer-item col-lg-6 col-sm-12">
+                <div class="f-contact d-flex flex-column">
+                    <div class="social_media">
+                        <a class="fb" target="_blank" href="https://www.facebook.com/allendor.soft"><img src="images/facebook-f.svg" alt=""></a>
+                        <a class="fb" target="_blank" href="https://www.instagram.com/allendor_soft/"><img src="images/instagram.svg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="phone" type="tel:+38(067)3568921" href="#">+38(067)356 89 21</a>
+                        <a class="mail" href="#">allendorspace@gmail.com</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-item d-flex justify-content-end item-2 col-lg-6 col-sm-12">
+               <a href="#banner">
+                   <img src="images/allendor_logo.svg" alt="">
+               </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
@@ -134,8 +547,11 @@
     </div>
 </div>
 <script src="js/index.js"></script>
-<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/product.js"></script>
+ <script src="js/cart_content.js"></script>
+<script src="js/simplebar.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/maska-nomera.js" type="text/javascript" ></script>
 
 <script>

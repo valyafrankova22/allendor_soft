@@ -59,5 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-
+// корзина
+// Добавляем прослушку на всем окне
 
