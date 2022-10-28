@@ -1020,6 +1020,10 @@ footer .social_media img {
   }
 }
 
+.carousel-item {
+  z-index: 0 !important;
+}
+
 .product {
   width: 100% !important;
 }
@@ -1032,6 +1036,41 @@ footer .social_media img {
   padding: 5px;
   text-align: center;
   color: dimgray;
+}
+
+.description {
+  margin-top: 50px;
+  text-align: center;
+  padding: 5px;
+}
+.description h5 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.charact {
+  background-color: rgba(204, 231, 38, 0.1);
+  padding: 50px 100px;
+}
+.charact h3 {
+  font-size: 50px;
+  line-height: 1;
+  padding: 5px;
+  text-align: center;
+  color: dimgray;
+  margin-bottom: 40px;
+}
+.charact tr {
+  color: dimgray;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
 
 /*# sourceMappingURL=second_page.css.map */

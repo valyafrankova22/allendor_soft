@@ -7,13 +7,17 @@
 @import "components/_footer";
 @import "components/_popup";
 
-
+.carousel-item {
+  z-index: 0 !important;
+}
 
 .product {
   width: 100% !important;
+
   .product__image {
     display: none !important;
   }
+
   .product__title {
     font-size: 40px;
     line-height: 1;
@@ -21,4 +25,41 @@
     text-align: center;
     color: dimgray;
   }
+}
+
+.description {
+   margin-top: 50px;
+  text-align: center;
+  padding: 5px;
+
+  h5 {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+ }
+
+.charact {
+  background-color: rgba(204, 231, 38, 0.1);
+  padding: 50px 100px;
+  h3 {
+    font-size: 50px;
+    line-height: 1;
+    padding: 5px;
+    text-align: center;
+    color: dimgray;
+    margin-bottom: 40px;
+  }
+
+  tr {
+    color: dimgray;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid whitesmoke;
+  }
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }

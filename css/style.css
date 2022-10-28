@@ -788,6 +788,7 @@ header .social_media img {
 .shop_wrapper .product-price {
   margin-bottom: 17px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .shop_wrapper .product-price__current {
@@ -830,7 +831,6 @@ header .social_media img {
 }
 .shop_wrapper .items {
   font-family: "Merriweather", serif;
-  background: #f2f2f2;
   border-radius: 8px;
   width: 120px;
   display: flex;
