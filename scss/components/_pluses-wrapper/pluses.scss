@@ -1,22 +1,8 @@
 .pluses_wrapper {
-  height: 620px;
   position: relative;
   background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
   box-shadow: inset 2px 2px 5px rgb(154 147 140 / 50%), 1px 1px 5px rgb(255 255 255);
 
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-image: url("../../../images/20.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
 
   h4 {
     font-size: 50px;
