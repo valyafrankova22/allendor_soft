@@ -12,9 +12,16 @@
     <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
         <a class="navbar-brand nav-link active" aria-current="page" href="#"><img src="images/allendor_logo.svg" alt=""></a>
+        <div class="form-button d-lg-none d-md-block">
+            <a href="#popup" class="custom-btn btn-1">
+                <span>дзвінок</span>
+                <span>Замовити</span>
+            </a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -48,48 +55,49 @@
                     </a>
                 </div>
             </div>
-            <div class="form-button">
-                <a href="#popup" class="custom-btn btn-1">
+            <div class="form-button d-lg-block d-md-none">
+                <a href="#popup" class="custom-btn btn-1 d-lg-block d-md-none d-sm-none">
                     <span>дзвінок</span>
                     <span>Замовити</span>
                 </a>
             </div>
-            <div class="header__cart cart" tabindex="0">
-                <div class="cart__text">
-                    Кошик
-                    <span class="cart__quantity">0</span>
-                </div>
-                <div class="cart-content">
-                    <ul class="cart-content__list" data-simplebar>
-                         <!-- <li class="cart-content__item">
-                            <article class="cart-content__product cart-product">
-                                <img src="images/1.jpg" alt="" class="cart-product__img">
-                                <div class="cart-product__text">
-                                    <h3 class="cart-product__title">крісло Allendor</h3>
-                                    <div class="details-wrapper">
-                            <div class="items counter-wrapper">
-                                <div class="items__control" data-action="minus">-</div>
-                                <div class="items__current" data-counter>1</div>
-                                <div class="items__control" data-action="plus">+</div>
-                            </div>
-                        </div>
-                                    <span class="cart-product__price">190 789 ₽</span>
-                                </div>
-                                <button class="cart-product__delete" aria-label="Удалить товар"></button>
-                            </article>
-                        </li> -->
 
-                    </ul>
-                    <div class="cart-content__bottom">
-                        <div class="cart-content__fullprice">
-                            <span>Разом:</span>
-                            <span class="fullprice">11 600 грн</span>
-                        </div>
-                        <div class="cart-content__btn btn">Перейти до кошика</div>
-                    </div>
+        </div>
+        <div class="header__cart cart " tabindex="0">
+        <div class="cart__text">
+            Кошик
+            <span class="cart__quantity">0</span>
+        </div>
+        <div class="cart-content">
+            <ul class="cart-content__list" data-simplebar>
+                <!-- <li class="cart-content__item">
+                   <article class="cart-content__product cart-product">
+                       <img src="images/1.jpg" alt="" class="cart-product__img">
+                       <div class="cart-product__text">
+                           <h3 class="cart-product__title">крісло Allendor</h3>
+                           <div class="details-wrapper">
+                   <div class="items counter-wrapper">
+                       <div class="items__control" data-action="minus">-</div>
+                       <div class="items__current" data-counter>1</div>
+                       <div class="items__control" data-action="plus">+</div>
+                   </div>
+               </div>
+                           <span class="cart-product__price">190 789 ₽</span>
+                       </div>
+                       <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                   </article>
+               </li> -->
+
+            </ul>
+            <div class="cart-content__bottom">
+                <div class="cart-content__fullprice">
+                    <span>Разом:</span>
+                    <span class="fullprice">11 600 грн</span>
                 </div>
+                <div class="cart-content__btn btn">Перейти до кошика</div>
             </div>
         </div>
+    </div>
     </div>
 </nav>
 </header>
@@ -516,6 +524,8 @@
                </a>
             </div>
         </div>
+
+        <a href="#shop" class="toTop">^</a>
     </div>
 </footer>
 

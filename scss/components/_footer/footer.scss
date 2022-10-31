@@ -33,8 +33,25 @@ footer {
     }
   }
 
+  .toTop {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(204, 231, 38);
+    color: dimgray;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+  }
 }
+
+
 
 
 
