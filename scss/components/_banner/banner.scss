@@ -1,8 +1,7 @@
-.wrapper {
-  background: url("../../../images/banner-background.jpeg");
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-  .banner {
+.banner {
+    background: url("../../../images/banner-background.jpeg");
+    margin-bottom: 50px;
+    padding-bottom: 20px;
     .banner_item {
       padding-top: 50px;
       padding-bottom: 20px;
@@ -42,7 +41,7 @@
 
       }
       .btn-2:before {
-        height: 0%;
+        height: 0;
         width: 2px;
       }
       .btn-2:hover {
@@ -54,4 +53,3 @@
       }
     }
   }
-}

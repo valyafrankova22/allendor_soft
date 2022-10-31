@@ -1,9 +1,42 @@
 @media (max-width: 992px) {
 
-  .wrapper {
+  .banner {
     background: #f2f2f2;
     .row {
       flex-direction: column-reverse;
     }
   }
+
 }
+
+@media (max-width: 576px) {
+
+  .banner {
+    .my-cont {
+      max-width: 100%;
+
+      .btn-2 {
+        max-width: 70%;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  }
+
+@media (max-width: 320px) {
+
+  .banner {
+    .my-cont {
+      max-width: 100%;
+
+      .btn-2 {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+

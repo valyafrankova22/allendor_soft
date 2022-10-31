@@ -590,17 +590,17 @@ header .social_media img {
   -ms-overflow-style: none;
 }
 
-.wrapper {
+.banner {
   background: url("../../../images/banner-background.jpeg");
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
-.wrapper .banner .banner_item {
+.banner .banner_item {
   padding-top: 50px;
   padding-bottom: 20px;
   max-height: content-box;
 }
-.wrapper .banner .banner_item h1 {
+.banner .banner_item h1 {
   font-size: 70px;
   background: rgba(204, 231, 38, 0.8);
   border-radius: 5px;
@@ -609,13 +609,13 @@ header .social_media img {
   margin-bottom: 15px;
   color: dimgray;
 }
-.wrapper .banner .banner_item h2 {
+.banner .banner_item h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
   color: dimgray;
 }
-.wrapper .banner .banner_item .btn-2 {
+.banner .banner_item .btn-2 {
   background: rgb(204, 231, 38);
   border: none;
   width: 400px;
@@ -628,21 +628,40 @@ header .social_media img {
   line-height: 43px;
   text-align: center;
 }
-.wrapper .banner .banner_item .btn-2:before {
-  height: 0%;
+.banner .banner_item .btn-2:before {
+  height: 0;
   width: 2px;
 }
-.wrapper .banner .banner_item .btn-2:hover {
+.banner .banner_item .btn-2:hover {
   color: white;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 992px) {
-  .wrapper {
+  .banner {
     background: #f2f2f2;
   }
-  .wrapper .row {
+  .banner .row {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .banner .my-cont {
+    max-width: 100%;
+  }
+  .banner .my-cont .btn-2 {
+    max-width: 70%;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .banner .my-cont {
+    max-width: 100%;
+  }
+  .banner .my-cont .btn-2 {
+    max-width: 70%;
   }
 }
 .about_us {
