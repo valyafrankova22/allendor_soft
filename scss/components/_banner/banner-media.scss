@@ -12,22 +12,24 @@
 @media (max-width: 576px) {
 
   .banner {
+      .banner_item {
+        .btn-2 {
+          max-width: 80%;
+          font-size: 15px;
+          line-height: 40px;
+          margin: 0 auto;
+        }
 
-
-      .btn-2 {
-        max-width: 70%;
-        font-size: 15px;
-        line-height: 20px;
-        margin: 0 auto;
+        h1 {
+          font-size: 50px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
       }
 
-      h1 {
-        font-size: 50px;
-      }
-      h2 {
-        font-size: 30px;
-      }
-  }
+
 
   }
 
