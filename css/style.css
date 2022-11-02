@@ -387,6 +387,9 @@ header .social_media img {
   header .navbar .container {
     max-width: 80%;
   }
+  header .cart-content {
+    width: 250px;
+  }
 }
 @media (max-width: 320px) {
   header .navbar {
