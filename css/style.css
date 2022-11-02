@@ -49,9 +49,8 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  width: 1250px;
-  margin: 0 auto;
+body {
+  overflow-x: hidden;
 }
 
 .row {
@@ -187,7 +186,7 @@ header .social_media img {
   padding: 20px 19px;
   transition: background-color 0.3s;
   top: 80px;
-  right: 30px;
+  right: 20px;
 }
 
 .cart.active:hover {
@@ -380,25 +379,35 @@ header .social_media img {
   opacity: 1;
 }
 
+/*
 @media (max-width: 576px) {
-  header .navbar {
-    max-width: 550px;
-  }
-  header .navbar .container {
-    max-width: 80%;
-  }
-  header .cart-content {
-    width: 250px;
+  header {
+    .navbar {
+      max-width: 550px;
+      .container {
+        max-width: 80%;
+      }
+    }
+      .cart-content {
+        width: 250px;
+      }
+
   }
 }
+
+
 @media (max-width: 320px) {
-  header .navbar {
-    max-width: 290px;
+  header {
+    .navbar {
+      max-width: 290px;
+
+      .container {
+        max-width: 80%;
+      }
+    }
+
   }
-  header .navbar .container {
-    max-width: 80%;
-  }
-}
+}*/
 [data-simplebar] {
   position: relative;
   flex-direction: column;
@@ -667,27 +676,21 @@ header .social_media img {
   }
 }
 @media (max-width: 576px) {
-  .banner .my-cont {
-    max-width: 100%;
-  }
-  .banner .my-cont .btn-2 {
+  .banner .btn-2 {
     max-width: 70%;
     font-size: 15px;
     line-height: 20px;
     margin: 0 auto;
   }
-  .banner .my-cont h1 {
+  .banner h1 {
     font-size: 50px;
   }
-  .banner .my-cont h2 {
+  .banner h2 {
     font-size: 30px;
   }
 }
 @media (max-width: 320px) {
-  .banner .my-cont {
-    max-width: 100%;
-  }
-  .banner .my-cont .btn-2 {
+  .banner .btn-2 {
     max-width: 70%;
   }
 }
