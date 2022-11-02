@@ -3,7 +3,7 @@
 jQuery(document).ready(function () {
    
   
-   jQuery('.send-form').click( function() {
+   jQuery('.form_button').click( function() {
        var form = jQuery(this).closest('form');
        
        if ( form.valid() ) {

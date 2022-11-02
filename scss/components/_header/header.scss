@@ -132,9 +132,11 @@ header {
 
 
 .cart {
-  position: relative;
+  position: fixed;
   padding: 20px 19px;
   transition: background-color 0.3s;
+  top: 80px;
+  right: 30px;
 }
 
 .cart.active:hover {
