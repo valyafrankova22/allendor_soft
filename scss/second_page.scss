@@ -58,8 +58,17 @@
   }
 }
 
-.reviews {
-  display: flex;
-  align-items: center;
-  padding: 50px 0;
+
+
+@media (max-width: 768px) {
+
+  .catalog {
+    .row {
+      flex-direction: column;
+      .main_item {
+        width: 100%;
+      }
+    }
+  }
+
 }

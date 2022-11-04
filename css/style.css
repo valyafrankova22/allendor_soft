@@ -1266,7 +1266,7 @@ footer .toTop {
   outline: none;
   background: transparent;
 }
-.form .form_input._error {
+.form input ._error {
   border-bottom: 1px solid red;
 }
 .form label {

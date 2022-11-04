@@ -1129,10 +1129,13 @@ footer .toTop {
   border-bottom: 2px solid whitesmoke;
 }
 
-.reviews {
-  display: flex;
-  align-items: center;
-  padding: 50px 0;
+@media (max-width: 768px) {
+  .catalog .row {
+    flex-direction: column;
+  }
+  .catalog .row .main_item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=second_page.css.map */
