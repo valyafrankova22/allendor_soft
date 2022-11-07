@@ -245,16 +245,97 @@
     </div>
     <div class="reviews">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-12">
                     <h3 class="text-center">Відгуки</h3>
                 </div>
 
-                <div class="col-lg-6">
-                    <div id="comment-field"></div>
+                <div class="col-lg-6 reviews_left">
+                    <div class="comment-field d-flex flex-column">
+                       <div class="com_name d-flex justify-content-between align-items-center">
+                           <div><h5>Тетяна</h5></div>
+                           <div><p>29.10.2022</p></div>
+                       </div>
+                        <div class="com_body">
+                            <p>Крісло просто чудове, не розумію в чому його секрет, але всі в захваті від
+                            зручності. І саме такої лаконічності в дизайні я давно шукала))</p>
+                        </div>
+                        <div class="com_img d-flex row">
+                            <img src="images/rev/vidguk1.png" alt="#">
+                            <img src="images/rev/vidguk1.2.png" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="comment-field d-flex flex-column">
+                        <div class="com_name d-flex justify-content-between align-items-center">
+                            <div><h5>Яна</h5></div>
+                            <div><p>27.10.2022</p></div>
+                        </div>
+                        <div class="com_body">
+                            <p>Крісла просто неймовірні, ідеально вписались в нашу квартиру, дуже вам дякую))</p>
+                        </div>
+                        <div class="com_img d-flex row">
+                            <img src="images/rev/vidguk_2.jpg" alt="#">
+                            <img src="images/rev/vidguk2_2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="comment-field d-flex flex-column">
+                        <div class="com_name d-flex justify-content-between align-items-center">
+                            <div><h5>Марія</h5></div>
+                            <div><p>25.10.2022</p></div>
+                        </div>
+                        <div class="com_body">
+                            <p>Дуже круті крісла, я замовляла для свого закладу, підійшли просто ідеально)</p>
+                        </div>
+                        <div class="com_img d-flex row">
+                            <img src="images/rev/vidguk3.jpg" alt="#">
+                            <img src="images/rev/vidguk3_2.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="comment-field d-flex flex-column">
+                        <div class="com_name d-flex justify-content-between align-items-center">
+                            <div><h5>Ліза</h5></div>
+                            <div><p>20.09.2022</p></div>
+                        </div>
+                        <div class="com_body">
+                            <p>Дуже класні крісла, особливо зацінив наш котик)))</p>
+                        </div>
+                        <div class="com_img d-flex row">
+                            <img src="images/rev/vidguk5.jpg" alt="#">
+                            <img src="images/rev/vidguk5_1.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="comment-field d-flex flex-column">
+                        <div class="com_name d-flex justify-content-between align-items-center">
+                            <div><h5>Валерія</h5></div>
+                            <div><p>01.10.2022</p></div>
+                        </div>
+                        <div class="com_body">
+                            <p>Я залишилась дуже задоволена покупкою, крісла круто підійшли
+                                під інтер'єр моєї квартири, просто радують око)))</p>
+                        </div>
+                        <div class="com_img d-flex row">
+                            <img src="images/rev/vidguk4.jpg" alt="#">
+                            <img src="images/rev/vidguk4_1.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
                 </div>
                 <div class="col-lg-6">
-                    <form action="" id="form-comment">
+                    <form action="#" id="form-comment">
+                        <input type="hidden" name="project_name" value="Allendor_comment">
+                        <input type="hidden" name="admin_email" value="allendorspace@gmail.com">
+                        <input type="hidden" name="form_subject" value="newComment">
+
                         <div class="form-group">
                             <label for="comment-name">Ваше ім'я</label>
                              <input type="text" class="form-control" id="comment-name">

@@ -32,17 +32,18 @@ window.addEventListener('click', function (event) {
             // Отображение статуса корзины Пустая / Полная
             toggleCartStatus();
 
-            // Пересчет общей стоимости товаров в корзине
-            calcCartPriceAndDelivery();
         }
 
     }
 
+
     // Проверяем клик на + или - внутри коризины
     if (event.target.hasAttribute('data-action') && event.target.closest('.cart-content__list')) {
         // Пересчет общей стоимости товаров в корзине
-        calcCartPriceAndDelivery();
+        calcCartPrice();
     }
+
+
 });
 
 
@@ -51,6 +52,7 @@ const cartProductsList = document.querySelector('.cart-content__list');
 const cart = document.querySelector('.cart');
 const cartQuantity = cart.querySelector('.cart__quantity');
 const fullPrice = document.querySelector('.fullprice');
+const counter = document.querySelector('[data-counter]').innerText;
 let price = 0;
 
 const randomId = () => {
@@ -72,6 +74,7 @@ const plusFullPrice = (currentPrice) => {
 const minusFullPrice = (currentPrice) => {
     return price -= currentPrice;
 };
+
 
 const printQuantity = () => {
     let productsListLength = cartProductsList.querySelector('.simplebar-content').children.length;
@@ -130,7 +133,6 @@ productsBtn.forEach(el => {
         let counter = parent.querySelector('[data-counter]').innerText;
         let priceString = priceWithoutSpaces(parent.querySelector('.product-price__current').textContent);
         let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.product-price__current').textContent));
-
         plusFullPrice(priceNumber);
 
         printFullPrice();

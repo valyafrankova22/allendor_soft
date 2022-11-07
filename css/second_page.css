@@ -967,7 +967,7 @@ footer .toTop {
   outline: none;
   background: transparent;
 }
-.form .form_input._error {
+.form input ._error {
   border-bottom: 1px solid red;
 }
 .form label {
@@ -1136,6 +1136,77 @@ footer .toTop {
   .catalog .row .main_item {
     width: 100%;
   }
+}
+.reviews {
+  padding: 50px 0;
+}
+.reviews h3 {
+  font-size: 70px;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: dimgray;
+}
+.reviews .reviews_left {
+  height: 500px;
+  overflow-y: scroll;
+}
+.reviews .reviews_left .comment-field {
+  padding: 15px;
+  border: 2px solid rgba(204, 231, 38, 0.5);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.reviews .reviews_left .comment-field .com_name, .reviews .reviews_left .comment-field .com_body {
+  border: 2px solid #f2f2f2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.reviews .reviews_left .com_name h5 {
+  color: dimgray;
+  font-size: 20px;
+}
+.reviews .reviews_left .com_name p {
+  font-style: italic;
+  color: dimgray;
+}
+.reviews .reviews_left img {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  transition: transform 0.25s;
+}
+.reviews .reviews_left img:hover {
+  transform: scale(2);
+}
+.reviews .form-group {
+  margin-bottom: 30px;
+}
+.reviews .form-group label {
+  color: rgb(204, 231, 38);
+}
+.reviews .form-group button {
+  background: rgb(204, 231, 38);
+  color: white;
+  border: none;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 43px;
+  text-align: center;
+}
+.reviews .form-group button:before {
+  height: 0;
+  width: 2px;
+}
+.reviews .form-group button:hover {
+  color: white;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=second_page.css.map */
