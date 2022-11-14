@@ -21,7 +21,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
                         url: "mail.php", //Change
                         data: th.serialize()
                     }).done(function() {
-                        alert("Thank you!");
+                        alert("Ваша заявка надіслана, очікуйте на дзвінок!");
                         setTimeout(function() {
                             // Done Functions
                             th.trigger("reset");
@@ -63,9 +63,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
         input.classList.remove('._error')
     }
 })
-
-
-
 
 
 

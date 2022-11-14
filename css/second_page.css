@@ -197,6 +197,9 @@ header .social_media img {
 
 .header__cart {
   margin-left: 10px;
+  background-color: rgba(204, 231, 38, 0.5);
+  border: 1px solid dimgray;
+  border-radius: 5px;
 }
 
 .cart__quantity {
@@ -1186,7 +1189,7 @@ footer .toTop {
 .reviews .form-group label {
   color: rgb(204, 231, 38);
 }
-.reviews .form-group button {
+.reviews button {
   background: rgb(204, 231, 38);
   color: white;
   border: none;
@@ -1200,13 +1203,39 @@ footer .toTop {
   line-height: 43px;
   text-align: center;
 }
-.reviews .form-group button:before {
+.reviews button:before {
   height: 0;
   width: 2px;
 }
-.reviews .form-group button:hover {
+.reviews button:hover {
   color: white;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+  .reviews .row {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .reviews .row .reviews_left {
+    margin-top: 40px;
+  }
+  .reviews .row .reviews_left .row {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 576px) {
+  .charact {
+    padding: 50px 20px;
+  }
+  .charact h3 {
+    font-size: 35px;
+  }
+  .reviews h3 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=second_page.css.map */

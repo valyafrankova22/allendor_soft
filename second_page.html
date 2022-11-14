@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/second_page.css">
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -136,7 +137,7 @@
                             <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
                         </a>
                         <h3 class="product__title">
-                            <a href="#">Allendor 001- натуральний ясень + нейлонова нитка</a>
+                            <a href="#">Allendor 001- натуральна деревина + нитка японського виробництва</a>
                         </h3>
                         <div class="product__info">
                             <span class="product__term">Артикул: 879876</span>
@@ -245,10 +246,11 @@
     </div>
     <div class="reviews" id="reviews">
         <div class="container">
+            <div class="col-lg-12">
+            <h3 class="text-center">Відгуки</h3>
+        </div>
             <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <h3 class="text-center">Відгуки</h3>
-                </div>
+
 
                 <div class="col-lg-6 reviews_left">
                     <div class="comment-field d-flex flex-column">
@@ -331,25 +333,24 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <form action="#" id="form-comment">
+                    <form action="#" id="form-comment" class="needs-validation">
                         <input type="hidden" name="project_name" value="Allendor_comment">
                         <input type="hidden" name="admin_email" value="allendorspace@gmail.com">
                         <input type="hidden" name="form_subject" value="newComment">
                         <div class="form-group">
                             <label for="comment-name">Ваше ім'я</label>
-                             <input type="text" class="form-control" id="comment-name">
+                             <input type="text" class="form-control _req" id="comment-name">
                         </div>
                         <div class="form-group">
                             <label for="comment-body">Відгук</label>
-                            <input type="text" class= "form-control" id="comment-body">
+                            <input type="text" class= "form-control _req" id="comment-body">
                         </div>
                         <div class="form-group">
                                 <label for="comment-file" class="form-label">Додати фото</label>
                                 <input class="form-control" type="file" id="comment-file" multiple>
                         </div>
-                        <div class="form-group text-right">
-                            <button type="submit" id="comment-add" class="btn-primary btn-5">Додати відгук</button>
-                        </div>
+                            <button type="submit" id="comment-add" class="btn-5 form_button">Додати відгук</button>
+
 
                     </form>
                 </div>
@@ -420,11 +421,11 @@
 </div>
 <script src="js/index.js"></script>
 <script src="js/second_page.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/product.js"></script>
 <script src="js/cart_content.js"></script>
 <script src="js/simplebar.js"></script>
-<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="js/maska-nomera.js" type="text/javascript" ></script>
 
 <script>

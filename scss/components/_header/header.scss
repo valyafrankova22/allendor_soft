@@ -147,6 +147,9 @@ header {
 
 .header__cart {
   margin-left: 10px;
+  background-color: rgba(204, 231, 38, 0.5);
+  border: 1px solid dimgray;
+  border-radius: 5px;
 }
 
 .cart__quantity {

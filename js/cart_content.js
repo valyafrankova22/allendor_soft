@@ -29,8 +29,6 @@ window.addEventListener('click', function (event) {
             // Удаляем товар из корзины
             event.target.closest('.cart-item').remove();
 
-            // Отображение статуса корзины Пустая / Полная
-            toggleCartStatus();
 
         }
 
@@ -40,7 +38,7 @@ window.addEventListener('click', function (event) {
     // Проверяем клик на + или - внутри коризины
     if (event.target.hasAttribute('data-action') && event.target.closest('.cart-content__list')) {
         // Пересчет общей стоимости товаров в корзине
-        calcCartPrice();
+        printFullPrice();
     }
 
 
@@ -52,7 +50,6 @@ const cartProductsList = document.querySelector('.cart-content__list');
 const cart = document.querySelector('.cart');
 const cartQuantity = cart.querySelector('.cart__quantity');
 const fullPrice = document.querySelector('.fullprice');
-const counter = document.querySelector('[data-counter]').innerText;
 let price = 0;
 
 const randomId = () => {
@@ -67,6 +64,7 @@ const normalPrice = (str) => {
     return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 };
 
+
 const plusFullPrice = (currentPrice) => {
     return price += currentPrice;
 };
@@ -74,6 +72,7 @@ const plusFullPrice = (currentPrice) => {
 const minusFullPrice = (currentPrice) => {
     return price -= currentPrice;
 };
+
 
 
 const printQuantity = () => {
