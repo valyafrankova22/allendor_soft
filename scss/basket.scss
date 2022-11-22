@@ -1,0 +1,23 @@
+@import "components/_footer";
+
+header {
+  padding: 40px;
+  .backToMain {
+    text-decoration: none;
+    color: dimgray;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+
+    &:hover {
+      background-color: rgb(204, 231, 38);
+      border-radius: 10px;
+      transition: color 0.5s;
+      position: relative;
+      transition-property: background-color, color;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      box-shadow: 2px 2px 1px rgb(204, 231, 38);
+    }
+  }
+}

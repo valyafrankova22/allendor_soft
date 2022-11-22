@@ -65,6 +65,15 @@ document.addEventListener(`DOMContentLoaded`, function () {
 })
 
 
+const header = document.querySelector('.header');
+const collapse = document.querySelector('.navbar-collapse');
+header.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-item')) {
+        collapse.classList.remove('.show');
+    }
+});
+
+
 
 
 

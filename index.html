@@ -65,31 +65,30 @@
         </div>
         <div class="cart-content">
             <ul class="cart-content__list" data-simplebar>
-                <!-- <li class="cart-content__item">
-                   <article class="cart-content__product cart-product">
-                       <img src="images/1.jpg" alt="" class="cart-product__img">
-                       <div class="cart-product__text">
-                           <h3 class="cart-product__title">крісло Allendor</h3>
-                           <div class="details-wrapper">
-                   <div class="items counter-wrapper">
-                       <div class="items__control" data-action="minus">-</div>
-                       <div class="items__current" data-counter>1</div>
-                       <div class="items__control" data-action="plus">+</div>
-                   </div>
-               </div>
-                           <span class="cart-product__price">190789 ₽</span>
-                       </div>
-                       <button class="cart-product__delete" aria-label="Удалить товар"></button>
-                   </article>
-               </li> -->
-
+                <!--<li class="cart-content__item">
+                    <article class="cart-content__product cart-product">
+                        <img src="images/1.jpg" alt="" class="cart-product__img">
+                        <div class="cart-product__text">
+                            <h3 class="cart-product__title">Allendor</h3>
+                            <div class="details-wrapper">
+                                <div class="items counter-wrapper">
+                                    <div class="items__control" data-action="minus">-</div>
+                                    <div class="items__current data-counter" data-counter>0</div>
+                                    <div class="items__control" data-action="plus">+</div>
+                                </div>
+                            </div>
+                            <span class="cart-product__price">0 грн</span>
+                        </div>
+                        <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                    </article>
+                </li>-->
             </ul>
             <div class="cart-content__bottom">
                 <div class="cart-content__fullprice">
                     <span>Разом:</span>
                     <span class="fullprice">0 грн</span>
                 </div>
-                <div class="cart-content__btn btn">Перейти до кошика</div>
+                <a href="#modal"><button class="cart-content__btn btn" data-graph-animation="fadeInUp">Перейти в корзину</button></a>
             </div>
         </div>
     </div>
@@ -172,7 +171,7 @@
                         <a href="second_page.html" class="product__image">
                             <div class="product__switch image-switch">
                                 <div class="image-switch__item">
-                                    <div class="image-switch__img"><img src="images/1.jpg" alt="Allendor"></div>
+                                    <div class="image-switch__img"><img class="product-img" src="images/1.jpg" alt="Allendor"></div>
                                 </div>
                                 <div class="image-switch__item">
                                     <div class="image-switch__img"><img src="images/5.jpg" alt="Allendor"></div>
@@ -214,7 +213,7 @@
                         <a href="black_chair.html" class="product__image">
                             <div class="product__switch image-switch">
                                 <div class="image-switch__item">
-                                    <div class="image-switch__img"><img src="images/2.jpg" alt="Allendor"></div>
+                                    <div class="image-switch__img"><img class="product-img" src="images/2.jpg" alt="Allendor"></div>
                                 </div>
                                 <div class="image-switch__item">
                                     <div class="image-switch__img"><img src="images/8.jpg" alt="Allendor"></div>
@@ -254,7 +253,7 @@
                         <a href="lavka_page.html" class="product__image">
                             <div class="product__switch image-switch">
                                 <div class="image-switch__item">
-                                    <div class="image-switch__img"><img src="images/6.jpg" alt="Allendor"></div>
+                                    <div class="image-switch__img"><img class="product-img" src="images/6.jpg" alt="Allendor"></div>
                                 </div>
                                 <div class="image-switch__item">
                                     <div class="image-switch__img"><img src="images/9.jpg" alt="Allendor"></div>
@@ -294,7 +293,7 @@
                         <a href="table_page.html" class="product__image">
                             <div class="product__switch image-switch">
                                 <div class="image-switch__item">
-                                    <div class="image-switch__img"><img src="images/12.jpg" alt="Allendor"></div>
+                                    <div class="image-switch__img"><img class="product-img" src="images/12.jpg" alt="Allendor"></div>
                                 </div>
                                 <div class="image-switch__item">
                                     <div class="image-switch__img"><img src="images/13.jpg" alt="Allendor"></div>
@@ -500,6 +499,7 @@
         </div>
     </div>
 </main>
+
 <footer id="footer">
     <div class="container">
         <div class="row footer-row align-items-center">
@@ -528,6 +528,65 @@
 </footer>
 
 
+<div class="popup" id="modal">
+    <a href="#header" class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+                <div class="modal-content order-modal__content">
+                    <div class="order-modal__top">
+                        <h2 class="order-modal__title">Оформлення замовлення</h2>
+                    </div>
+                    <div class="order-modal__info">
+                        <div class="order-modal__quantity order-modal__info-item">Товарів в замовленні: <span>0 шт</span></div>
+                        <div class="order-modal__summ order-modal__info-item">Загальна сума: <span>0 грн</span></div>
+                        <div class="order-modal__products order-modal__info-item">
+                            <button class="order-modal__btn">Товари в замовленні</button>
+                            <ul class="order-modal__list">
+                                 <!--<li class="order-modal__item">
+                                    <article class="order-modal__product order-product">
+                                        <img src="img/macbook.jpg" alt="" class="order-product__img">
+                                        <div class="order-product__text">
+                                            <h3 class="order-product__title">allendor</h3>
+                                            <span class="order-product__price">0 грн </span>
+                                        </div>
+                                        <button class="order-product__delete">Видалити</button>
+                                    </article>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <form action="#" class="order-modal__form order">
+                        <input type="hidden" name="theme" value="Обратный звонок">
+                        <input type="hidden" name="admin_email[]" value="allendorspace@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+                        <label class="order__label">
+                            <span class="order__text">ПІБ</span>
+                            <input type="text" name="Имя" class="order__input">
+                        </label>
+                        <label class="order__label">
+                            <span class="order__text">Номер телефону</span>
+                            <input type="tel" name="Телефон" class="order__input">
+                        </label>
+                        <label class="order__label">
+                            <span class="order__text">Електронна пошта</span>
+                            <input type="email" name="Email" class="order__input">
+                        </label>
+                        <label class="order__label">
+                            <span class="order__text">Місто</span>
+                            <input type="text" name="city" class="order__input">
+                        </label>
+                        <label class="order__label">
+                            <span class="order__text">Відділення Нової пошти</span>
+                            <input type="text" name="post_number" class="order__input">
+                        </label>
+                        <button class="order__btn btn">Оформити замовлення</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="popup" class="popup">
     <a href="#header" class="popup_area"></a>
     <div class="popup_body">
@@ -563,11 +622,12 @@
     </div>
 </div>
 
+
 <script src="js/index.js"></script>
 <script src="js/product.js"></script>
-<script src="js/cart_content.js"></script>
-<script src="js/calcPrise.js"></script>
 <script src="js/simplebar.js"></script>
+<script src="js/cart_content.js"></script>
+<script src="js/counter.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/maska-nomera.js" type="text/javascript" ></script>
