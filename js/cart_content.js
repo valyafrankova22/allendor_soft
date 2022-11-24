@@ -40,7 +40,7 @@ let productArray = [];
     };
 
     const printFullPrice = () => {
-        fullPrice.textContent = `${normalPrice(price)} грн`;
+        fullPrice.textContent = `${normalPrice(price)}`;
     };
 
     const generateCartProduct = (img, title, price, id, counter) => {

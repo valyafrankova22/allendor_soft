@@ -360,6 +360,14 @@ header .social_media img {
   display: inline-block;
   width: 246px;
   text-align: center;
+  color: white;
+  background-color: rgb(204, 231, 38);
+  border-radius: 10px;
+}
+.cart-content__btn:hover {
+  background: rgb(204, 231, 38);
+  color: white;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .simplebar-track.simplebar-vertical {
@@ -619,6 +627,7 @@ header .social_media img {
 .catalog .product {
   width: 23%; /* для удобства */
   border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
   border-radius: 4px;
   padding: 20px;
   font-size: 14px;
@@ -675,7 +684,6 @@ header .social_media img {
 }
 .catalog .image-pagination {
   position: absolute;
-  z-index: 30;
   left: 0;
   bottom: 15px;
   width: 100%;
@@ -842,6 +850,7 @@ footer .toTop {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  border: 1px solid dimgray;
   background-color: rgb(204, 231, 38);
   color: dimgray;
   font-size: 30px;
@@ -1083,6 +1092,105 @@ footer .toTop {
   50%, 100% {
     bottom: 100%;
   }
+}
+
+.modal__container {
+  margin-top: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #F4F4F4;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.modal__container .order-modal__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(204, 231, 38);
+  text-align: center;
+}
+.modal__container .order-modal__info-item {
+  margin-bottom: 15px;
+}
+.modal__container .order-modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.modal__container .order-modal__form .order__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.modal__container .order-modal__form .order__label .order__input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(204, 231, 38);
+  outline: none;
+  background: transparent;
+}
+.modal__container .order__btn {
+  background: rgb(204, 231, 38);
+  color: dimgray;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.order-modal__list {
+  display: none;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.order-modal__list img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.order-modal__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.order-product__text {
+  margin-right: 10px;
+}
+
+.order-product__title {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-dark);
+}
+
+.order-product__price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-dark);
+}
+
+.order-product__delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--color-light);
 }
 
 .carousel-item {

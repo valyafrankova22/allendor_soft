@@ -761,6 +761,7 @@ header .social_media img {
 .catalog .product {
   width: 23%; /* для удобства */
   border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
   border-radius: 4px;
   padding: 20px;
   font-size: 14px;
@@ -1158,6 +1159,15 @@ footer .toTop {
   position: fixed;
   right: 30px;
   bottom: 30px;
+}
+
+.pl_link {
+  color: transparent;
+  padding-right: 20px;
+}
+
+.pl_link:hover {
+  color: transparent;
 }
 
 @media (max-width: 992px) {
